@@ -287,6 +287,14 @@ img {
     font-size: 1.4rem;
   }
 }
+.centered .about ul li:hover {
+  background-color: black;
+}
+.centered .about ul li:hover a,
+.centered .about ul li:hover a:hover {
+  color: white;
+  text-decoration: none;
+}
 .centered .error {
   text-align: center;
 }

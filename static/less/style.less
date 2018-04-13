@@ -172,6 +172,10 @@ img {
   margin-top: 1.6rem;
   margin-bottom: 3.2rem;
   article {
+    @media only screen and (min-device-width : 1080px) {
+	    max-width: 72rem;
+		margin-left: 16rem;
+    }
     header {
       margin-top: 3.2rem;
       margin-bottom: 3.2rem;
@@ -185,6 +189,8 @@ img {
         @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
           font-size: 1.6rem;
         }
+
+
       }
     }
   }
@@ -245,12 +251,17 @@ img {
   align-items: center;
   justify-content: center;
   .about {
+	margin-top: 29rem;
     text-align: center;
     h1 {
+	  padding: 0.7rem;
+	  background-color: white;
       margin-top: 2.0rem;
       margin-bottom: 0.5rem;
     }
     h2 {
+	  padding: 1rem;
+	  background-color: white;
       margin-top: 1.0rem;
       margin-bottom: 0.5rem;
       font-size: 2.4rem;
@@ -263,6 +274,8 @@ img {
       margin: 3.0rem 0 1.0rem 0;
       padding: 0;
       li {
+  	  padding: 0.5rem;
+  	    background-color: white;
         display: inline;
         position: relative;
         a {
@@ -287,6 +300,7 @@ img {
       @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
         font-size: 3.2rem;
       }
+
     }
     h2 {
       margin-top: 2.0rem;
@@ -312,4 +326,16 @@ img {
 
 .float-left {
   float: left;
+}
+
+.explanatory-header {
+	max-width: 80rem;
+	font-size: smaller;
+}
+
+#about-backdrop {
+	background-image: url('/images/logo-big.png');
+	background-size: contain;
+	min-width: 640px;
+	min-height: 640px;
 }

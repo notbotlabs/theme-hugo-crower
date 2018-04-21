@@ -1,8 +1,8 @@
 <nav class="navigation">
   <section class="container">
-    <a class="navigation-title" href="{{ "/" | absURL }}">
-      {{ .Site.Title }}
-    </a>
+		    <a class="navigation-title" href="{{ "/" | absURL }}">
+		      {{ .Site.Title }}
+		  	</a>
     {{ with .Site.Menus.main }}
     <ul class="navigation-list float-right">
       {{ range sort . }}
@@ -12,5 +12,12 @@
       {{ end }}
     </ul>
     {{ end }}
-  </section>
+	</section>
+	{{ if .IsPage }}
+		<section class="container">
+			<div id="botnotbot-does">
+				  {{with .Parent.Params.sectiontitle }}{{ . }}{{ end }} {{with .Params.conjunction }}{{ . }}{{ end }} ...
+			</div>
+		</section>
+	{{ end }}
 </nav>

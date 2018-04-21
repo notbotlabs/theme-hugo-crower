@@ -1,12 +1,5 @@
 {{ define "title" }}
-  {{ .Site.Title }}
-  	{{with .Params.SectionTitle }}{{ . }}{{ end }}
-  	{{with .Params.Conjunction }}{{ . }}{{ end }}
-	{{if isset .Params "title"}}
-		{{ .Params.Title }}
-	{{ else }}
-		...
-	{{ end }}
+  {{ .Site.Title }} {{with .Params.SectionTitle }}{{ . }}{{ end }} ...
 {{ end }}
 {{ define "content" }}
   {{ partial "list.html" . }}

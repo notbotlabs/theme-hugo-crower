@@ -1,4 +1,4 @@
-# hugo-coder
+# theme-hugo-crower
 
 A simple and clean blog theme for Hugo.
 
@@ -6,14 +6,14 @@ A simple and clean blog theme for Hugo.
 
 ## How to use this theme
 
-To use `hugo-coder` go through the following steps.
+To use `crower` go through the following steps.
 
 ### Download
 
 Clone this repository into your Hugo project.
 
 ```
-git clone https://github.com/luizdepra/hugo-coder.git themes/coder
+git clone https://github.com/notbotlabs/theme-hugo-crower.git themes/crower
 ```
 
 ### Configuration
@@ -21,14 +21,14 @@ git clone https://github.com/luizdepra/hugo-coder.git themes/coder
 Add the following lines to your `config.toml`.
 
 ```toml
-theme = "coder" # set the theme
+theme = "crower" # set the theme
 
 [params] # theme parameters
     author = "John Doe" # author's name
     info = "Full Stack DevOps and Magician" # author's job title or info
     description = "John Doe's personal website" # site description
     keywords = "blog,developer,personal" # site keywords
-    
+
 # Social links
 [[params.social]]
     name = "Github"
@@ -75,15 +75,7 @@ hugo server
 - Comments (probably not Disqus, sorry)
 - Tags, Categories and Series
 
-## License
 
-Coder is licensed under the [MIT license](https://github.com/luizdepra/hugo-coder/blob/master/LICENSE.md).
+## Thanks to...
 
-## Author
-
-[Luiz de Prá](https://luizdepra.com)
-
-## Special Thanks
-
-- Gleen McComb, for his great [article](https://glennmccomb.com/articles/how-to-build-custom-hugo-pagination/) about custom pagination.
-- All contributors, for every PR and Issue reported.
+[Luiz de Prá](https://luizdepra.com) for his theme [Coder](https://github.com/luizdepra/hugo-coder), on which Crower is based.

@@ -33,7 +33,7 @@ body {
 a {
   font-weight: 700;
   color: @darker-fg-color;
-  text-decoration: none;
+  text-decoration: overline;
   &:focus,
   &:hover {
     text-decoration: underline;
@@ -51,7 +51,7 @@ h4,
 h5,
 h6 {
   color: @darker-fg-color;
-  text-transform: uppercase;
+  //text-transform: uppercase;
   letter-spacing: 0.0625em;
   margin: 3.2rem 0 1.6rem 0;
 }
@@ -144,7 +144,7 @@ img {
   a {
     display: inline;
     font-size: 1.6rem;
-    text-transform: uppercase;
+//    text-transform: uppercase;
     line-height: 6.0rem;
     letter-spacing: 0.1rem;
     @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -217,9 +217,9 @@ img {
           text-align: left;
         }
       }
-      a {
-        text-transform: uppercase;
-      }
+//      a {
+//        text-transform: uppercase;
+//      }
     }
   }
 }
@@ -274,12 +274,13 @@ img {
       margin: 3.0rem 0 1.0rem 0;
       padding: 0;
       li {
-  	  padding: 0.5rem;
+  	    padding: 0.5rem;
   	    background-color: white;
         display: inline;
         position: relative;
         a {
           text-transform: uppercase;
+		  text-decoration: none;
           margin-left: 1.0rem;
           margin-right: 1.0rem;
           font-size: 1.6rem;
@@ -347,8 +348,32 @@ img {
 	min-height: 640px;
 }
 
+.container-does {
+	background-color: black;
+	color: white;
+	width: 80%;
+	line-height: 2.2rem;
+}
+
 #botnotbot-does {
-	margin-left: 12rem;
-	margin-top: -3rem;
+	margin-left: 10rem;
+	margin-top: -1rem;
 	font-size: 1.3rem;
+}
+
+.page-title {
+	line-height: 6rem;
+}
+
+.list-page-section {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+
+	.list-page-description {
+		width: 56%;
+		font-size: 1.2rem;
+		display: inline-block;
+		margin-left: 4.2rem;
+		margin-top: 0.8rem;
+	}
 }

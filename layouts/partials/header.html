@@ -13,11 +13,11 @@
     </ul>
     {{ end }}
 	</section>
-	{{ if .IsPage }}
-		<section class="container">
+	<section class="container container-does">
+		{{ if .IsPage }}
 			<div id="botnotbot-does">
-				  {{with .Parent.Params.sectiontitle }}{{ . }}{{ end }} {{with .Params.conjunction }}{{ . }}{{ end }} ...
+				  ... {{with .Parent.Params.sectiontitle }}{{ . }}{{ end }} {{with .Params.conjunction }}{{ . }}{{ end }} ...
 			</div>
-		</section>
-	{{ end }}
+		{{ end }}
+	</section>
 </nav>

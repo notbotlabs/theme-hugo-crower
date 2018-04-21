@@ -4,11 +4,24 @@
 	  {{ .Content }}
   </section>
   <ul>
-    {{ range .Data.Pages }}
-    <li>
-      <a href="{{ .URL }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
+	{{ if isset .Sections 0 }}
+      {{ .Page.Scratch.Set "topsectiontitle" "snubbarub" }}
+	  <h3>{{ .Site.Title }} {{ .Params.sectiontitle }}… </h3>
+	  {{ range .Sections }}
+	  <li>
+	    <ul>
+	      {{ range .Data.Pages }}
+		  	{{ partial "list-page-section.html" . }}
+	      {{ end }}
+	    </ul>
+      </li>
+	  {{ end }}
+	{{ else }}
+	  <h3>{{ .Site.Title }}… </h3>
+	  {{ range .Data.Pages }}
+	    {{ partial "list-page-section.html" . }}
+	  {{ end }}
+	{{ end }}
   </ul>
   {{ partial "pagination.html" . }}
 </section>

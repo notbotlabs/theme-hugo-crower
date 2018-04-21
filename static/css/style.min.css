@@ -26,7 +26,7 @@ body {
 a {
   font-weight: 700;
   color: #000;
-  text-decoration: none;
+  text-decoration: overline;
 }
 a:focus,
 a:hover {
@@ -42,7 +42,6 @@ h4,
 h5,
 h6 {
   color: #000;
-  text-transform: uppercase;
   letter-spacing: 0.0625em;
   margin: 3.2rem 0 1.6rem 0;
 }
@@ -138,7 +137,6 @@ img {
 .navigation a {
   display: inline;
   font-size: 1.6rem;
-  text-transform: uppercase;
   line-height: 6.0rem;
   letter-spacing: 0.1rem;
 }
@@ -216,9 +214,6 @@ img {
     text-align: left;
   }
 }
-.list ul li a {
-  text-transform: uppercase;
-}
 .pagination {
   margin-top: 6.0rem;
   text-align: center;
@@ -278,6 +273,7 @@ img {
 }
 .centered .about ul li a {
   text-transform: uppercase;
+  text-decoration: none;
   margin-left: 1.0rem;
   margin-right: 1.0rem;
   font-size: 1.6rem;
@@ -340,8 +336,28 @@ img {
   min-width: 640px;
   min-height: 640px;
 }
+.container-does {
+  background-color: black;
+  color: white;
+  width: 80%;
+  line-height: 2.2rem;
+}
 #botnotbot-does {
-  margin-left: 12rem;
-  margin-top: -3rem;
+  margin-left: 10rem;
+  margin-top: -1rem;
   font-size: 1.3rem;
+}
+.page-title {
+  line-height: 6rem;
+}
+.list-page-section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.list-page-section .list-page-description {
+  width: 56%;
+  font-size: 1.2rem;
+  display: inline-block;
+  margin-left: 4.2rem;
+  margin-top: 0.8rem;
 }

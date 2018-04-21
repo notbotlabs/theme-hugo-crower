@@ -1,0 +1,20 @@
+{{$title := .Parent.Parent.Params.sectiontitle}}
+<li>
+  <section class="list-page-section container">
+    <section class="list-page-title container">
+	  …
+	  {{if $title}}
+	    {{ $title }} <em>{{ .Parent.Params.sectiontitle }}</em>
+	  {{ else }}
+	  	{{ .Parent.Params.sectiontitle }}
+      {{end}}
+	  {{ .Params.conjunction }}
+	  <a href="{{ .URL }}">{{ .Title }}</a>
+    </section>
+    {{ with .Params.description }}
+	  <section class="list-page-description container">
+	    {{ . }}
+	  </section>
+    {{ end }}
+  </section>
+</li>
